@@ -15,6 +15,7 @@ composer create-project --prefer-dist akeneo/pim-community-standard pim "1.3.*@s
 
 ```
 cd /vagrant/pim
+php app/console cache:clear --env=prod
 php app/console pim:install --env=prod
 ```
 
@@ -23,4 +24,5 @@ overwrite the db (192.168.14.14/localhost(for ssh), pim, pim, pim) with your dum
 clone the automp repo somewhere in vagrant and 
 ```
 cp -rf automp/tools/pim/* /vagrant/pim/
+php app/console cache:clear --env=prod
 ```
