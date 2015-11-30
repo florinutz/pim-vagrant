@@ -26,3 +26,5 @@ clone the automp repo somewhere in vagrant and
 cp -rf automp/tools/pim/* /vagrant/pim/
 php app/console cache:clear --env=prod
 ```
+
+configure automp to use the new pim
