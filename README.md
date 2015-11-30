@@ -30,4 +30,4 @@ and maybe clear the cache again
 ```
 php app/console cache:clear --env=prod
 ```
-configure automp to use the new pim
+configure automp to use the new pim.dev host
