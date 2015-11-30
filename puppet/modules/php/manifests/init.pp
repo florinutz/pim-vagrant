@@ -29,4 +29,9 @@ class php {
     ensure => running,
     require => Package['php5-fpm'],
   }
+
+  service { 'php5-intl':
+    ensure => present,
+    require => Exec['apt-get update'],
+  }
 }
