@@ -19,3 +19,8 @@ php app/console pim:install --env=prod
 ```
 
 overwrite the db (192.168.14.14/localhost(for ssh), pim, pim, pim) with your dump
+
+clone the automp repo somewhere in vagrant and 
+```
+cp -rf automp/tools/pim/* /vagrant/pim/
+```
