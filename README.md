@@ -1,7 +1,7 @@
 # pim-vagrant
 A simple helper for symfony apps and, in particular, PIM
 
-First make sure you have enough RAM for the install. 4G should be enough though.
+First make sure you have enough RAM for the install. 4G should be ridiculously enough, and you can reduce it after the composer install from Vagrantfile if needed.
 https://github.com/akeneo/pim-community-standard#create-a-akeneo-pim-project-with-composer
 
 ```
