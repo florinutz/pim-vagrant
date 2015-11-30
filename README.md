@@ -10,6 +10,12 @@ cd /vagrant
 composer create-project --prefer-dist akeneo/pim-community-standard pim "1.3.*@stable"
 ```
 
-set date.timezone to Europe/Berlin in /etc/php5/cli/php.ini and /etc/php5/fpm/php.ini
+* enable mcrypt http://askubuntu.com/questions/460837/mcrypt-extension-is-missing-in-14-04-server-for-mysql (but for fpm, not apache)
+* set date.timezone to Europe/Berlin in /etc/php5/cli/php.ini and /etc/php5/fpm/php.ini
 
-import the db (192.168.14.14/localhost(for ssh), pim, pim, pim)
+```
+cd /vagrant/pim
+php app/console pim:install --env=prod
+```
+
+overwrite the db (192.168.14.14/localhost(for ssh), pim, pim, pim) with your dump
