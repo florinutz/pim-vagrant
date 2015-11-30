@@ -10,4 +10,6 @@ cd /vagrant
 composer create-project --prefer-dist akeneo/pim-community-standard pim "1.3.*@stable"
 ```
 
-then import the db (192.168.14.14/localhost(for ssh), pim, pim, pim)
+set date.timezone to Europe/Berlin in /etc/php5/cli/php.ini and /etc/php5/fpm/php.ini
+
+import the db (192.168.14.14/localhost(for ssh), pim, pim, pim)
