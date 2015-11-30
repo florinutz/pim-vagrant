@@ -23,8 +23,11 @@ overwrite the db (192.168.14.14/localhost(for ssh), pim, pim, pim) with your dum
 
 clone the automp repo somewhere in vagrant and 
 ```
-cp -rf automp/tools/pim/* /vagrant/pim/
+cp -r automp/tools/pim/* /vagrant/pim/
+```
+(or do the next cp from outside of vagrant)
+and maybe clear the cache again
+```
 php app/console cache:clear --env=prod
 ```
-
 configure automp to use the new pim
