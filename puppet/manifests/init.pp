@@ -38,9 +38,9 @@ class { '::mysql::client':
   package_name => 'mysql-client-5.6'
 }
 
-mysql::db { 'pim':
-  user     => 'pim',
-  password => 'pim',
+mysql::db { 'akeneo_pim':
+  user     => 'akeneo_pim',
+  password => 'akeneo_pim',
   host     => '%',
   grant    => ['ALL'],
   charset  => 'utf8',
