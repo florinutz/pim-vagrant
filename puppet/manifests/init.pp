@@ -27,6 +27,7 @@ class { '::mysql::server':
   remove_default_accounts => true,
   override_options => {
     'mysqld' => {
+      'bind-address' => '0.0.0.0',
       'character_set_server' => 'utf8',
       'collation_server' => 'utf8_general_ci'
     }
